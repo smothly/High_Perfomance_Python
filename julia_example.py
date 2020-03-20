@@ -64,4 +64,4 @@ def calc_pure_python(draw_output, desired_width, max_iterations):
 # Calculate the Julia set using a pure Python solution with
 # reasonable defaults for a laptop
 # set draw_output to True to use PIL to draw an image
-calc_pure_python(draw_output=False, desired_width=1000, max_iterations=300)
+calc_pure_python(draw_output=False, desired_width=300, max_iterations=60)

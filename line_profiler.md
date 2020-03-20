@@ -16,18 +16,24 @@ CPU 병목원인을 찾아주는 도구로 한줄씩 프로파일링 해주는 `
 #### 일단 설치
 <pre><code>pip install line_profiler</code></pre>
 
-[코드]()
+[코드](https://github.com/smothly/High_Perfomance_Python/blob/master/julia_example.py)
+를 다운받으셔서 `julia_example.py`로 생성해주고,
+밑에 명령어로 실행해 줍니다.
+
+<pre><code>kernprof -l -v  julia_example.py</code></pre>
 
 
-kernprof -l -v  julia_example.py
-
-`-l`은 결과를 한줄씩 출력
-`-v`는 lprof파일 반환이 아니라 출력
+- `-l`은 결과를 한줄씩 출력
+- `-v`는 lprof파일 반환이 아니라 출력
 
 ## 결과
 ![image](https://user-images.githubusercontent.com/37397737/76531560-badc9600-64b8-11ea-952d-4d82d45d90e2.png)
 ![image](https://user-images.githubusercontent.com/37397737/76531722-fd9e6e00-64b8-11ea-919b-0502b10d2f11.png)
 ![image](https://user-images.githubusercontent.com/37397737/76531802-1444c500-64b9-11ea-96b2-fb71c3e909ff.png)
+
+Line Contents로 원본코드를 볼 수 있고, 다른 것들을 차근차근 설명 드리겠습니다.
+
+
 
 - https://ko.wikipedia.org/wiki/%EC%A5%98%EB%A6%AC%EC%95%84_%EC%A7%91%ED%95%A9
 - 고성능 파이썬 책
